@@ -76,3 +76,25 @@ const randCountry = () => {
     console.log(country);
 };
 randCountry()
+
+// Pick a random activity to do on adventure
+
+const randActivity = () => {
+    const activityNum = Math.floor(Math.random() * 3) + 1;
+
+    let activity = '';
+
+    switch (activityNum) {
+        case 1:
+            activity = 'Skiing';
+            break;
+        case 2:
+            activity = 'Hiking';
+            break;
+        case 3:
+            activity = 'Cooking Class';
+            break;
+    }
+    console.log(activity)
+}
+randActivity()
