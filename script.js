@@ -43,9 +43,9 @@ const randMonth = () => {
             month = 'December'
             break;
     }
-    console.log(month);
+    //console.log(month);
+    return month;
 };
-randMonth()
 
 // Generate a random country
 const randCountry = () => {
@@ -73,9 +73,9 @@ const randCountry = () => {
             country = 'Italy';
             break;
     }
-    console.log(country);
+    //console.log(country);
+    return country;
 };
-randCountry()
 
 // Pick a random activity to do on adventure
 
@@ -86,15 +86,23 @@ const randActivity = () => {
 
     switch (activityNum) {
         case 1:
-            activity = 'Skiing';
+            activity = 'go skiing';
             break;
         case 2:
-            activity = 'Hiking';
+            activity = 'go hiking';
             break;
         case 3:
-            activity = 'Cooking Class';
+            activity = 'take a cooking class';
             break;
     }
-    console.log(activity)
+    //console.log(activity)
+    return activity;
 }
-randActivity()
+
+// Display adventure details
+const adventureMonth = randMonth()
+const adventureCountry = randCountry()
+const adventureActivity = randActivity()
+const adventureResult = `For your next adventure, we suggest you travel to ${adventureCountry} in ${adventureMonth} to ${adventureActivity}.`
+console.log(adventureResult)
+
