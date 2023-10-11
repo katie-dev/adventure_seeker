@@ -45,8 +45,34 @@ const randMonth = () => {
     }
     console.log(month);
 };
-
 randMonth()
 
 // Generate a random country
+const randCountry = () => {
+    const countryNum = Math.floor(Math.random() * 6) + 1;
 
+    let country = '';
+
+    switch (countryNum) {
+        case 1:
+            country = 'Canada';
+            break;
+        case 2:
+            country = 'Switzerland';
+            break;
+        case 3:
+            country = 'Austria';
+            break;
+        case 4:
+            country = 'France';
+            break;
+        case 5:
+            country = 'Germany';
+            break;
+        case 6:
+            country = 'Italy';
+            break;
+    }
+    console.log(country);
+};
+randCountry()
